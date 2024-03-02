@@ -3,11 +3,14 @@
 #include "headers/Command.h"
 #include "headers/InputCommands.h"
 #include "headers/InputManager.h"
+#include "headers/MainMenu.h"
 #include <memory>
 
 int main() {
   sf::RenderWindow window(sf::VideoMode(800,600), "Game");
+  MainMenu mainMenu(window);
   std::unique_ptr<GameState> currState;
+  
 
   while (window.isOpen()) {
     sf::Event event;
@@ -19,6 +22,8 @@ int main() {
 
     window.clear();
     currState = std::make_unique<MainMenuState>();
+
+    mainMenu.draw();
     
   //TODO: Draw Graphics here
 

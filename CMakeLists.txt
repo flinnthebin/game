@@ -8,6 +8,7 @@ add_executable(game
   src/Main.cpp
   src/GameState.cpp
   src/InputManager.cpp
+  src/MainMenu.cpp
 )
 target_link_libraries(game sfml-graphics sfml-window sfml-system)
 
