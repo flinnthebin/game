@@ -1,7 +1,13 @@
 #include <SFML/Graphics.hpp>
+#include "headers/GameState.h"
+#include "headers/Command.h"
+#include "headers/InputCommands.h"
+#include "headers/InputManager.h"
+#include <memory>
 
 int main() {
   sf::RenderWindow window(sf::VideoMode(800,600), "Game");
+  std::unique_ptr<GameState> currState;
 
   while (window.isOpen()) {
     sf::Event event;
@@ -12,8 +18,9 @@ int main() {
     }
 
     window.clear();
-
-    //TODO: Draw Graphics here
+    currState = std::make_unique<MainMenuState>();
+    
+  //TODO: Draw Graphics here
 
     window.display();
   }

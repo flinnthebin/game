@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chris/game/src/window.cpp" "CMakeFiles/game.dir/src/window.cpp.o" "gcc" "CMakeFiles/game.dir/src/window.cpp.o.d"
+  "/home/chris/game/src/GameState.cpp" "CMakeFiles/game.dir/src/GameState.cpp.o" "gcc" "CMakeFiles/game.dir/src/GameState.cpp.o.d"
+  "/home/chris/game/src/InputManager.cpp" "CMakeFiles/game.dir/src/InputManager.cpp.o" "gcc" "CMakeFiles/game.dir/src/InputManager.cpp.o.d"
+  "/home/chris/game/src/Main.cpp" "CMakeFiles/game.dir/src/Main.cpp.o" "gcc" "CMakeFiles/game.dir/src/Main.cpp.o.d"
   )
 
 # Targets to which this target links.

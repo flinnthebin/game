@@ -69,34 +69,66 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
-CMakeFiles/game.dir/src/window.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/window.cpp.o: ../src/window.cpp
-CMakeFiles/game.dir/src/window.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/window.cpp.o -MF CMakeFiles/game.dir/src/window.cpp.o.d -o CMakeFiles/game.dir/src/window.cpp.o -c /home/chris/game/src/window.cpp
+CMakeFiles/game.dir/src/Main.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Main.cpp.o: ../src/Main.cpp
+CMakeFiles/game.dir/src/Main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/Main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Main.cpp.o -MF CMakeFiles/game.dir/src/Main.cpp.o.d -o CMakeFiles/game.dir/src/Main.cpp.o -c /home/chris/game/src/Main.cpp
 
-CMakeFiles/game.dir/src/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/game/src/window.cpp > CMakeFiles/game.dir/src/window.cpp.i
+CMakeFiles/game.dir/src/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/game/src/Main.cpp > CMakeFiles/game.dir/src/Main.cpp.i
 
-CMakeFiles/game.dir/src/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/game/src/window.cpp -o CMakeFiles/game.dir/src/window.cpp.s
+CMakeFiles/game.dir/src/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/game/src/Main.cpp -o CMakeFiles/game.dir/src/Main.cpp.s
+
+CMakeFiles/game.dir/src/GameState.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/GameState.cpp.o: ../src/GameState.cpp
+CMakeFiles/game.dir/src/GameState.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/GameState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/GameState.cpp.o -MF CMakeFiles/game.dir/src/GameState.cpp.o.d -o CMakeFiles/game.dir/src/GameState.cpp.o -c /home/chris/game/src/GameState.cpp
+
+CMakeFiles/game.dir/src/GameState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/GameState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/game/src/GameState.cpp > CMakeFiles/game.dir/src/GameState.cpp.i
+
+CMakeFiles/game.dir/src/GameState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/GameState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/game/src/GameState.cpp -o CMakeFiles/game.dir/src/GameState.cpp.s
+
+CMakeFiles/game.dir/src/InputManager.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/InputManager.cpp.o: ../src/InputManager.cpp
+CMakeFiles/game.dir/src/InputManager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/InputManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/InputManager.cpp.o -MF CMakeFiles/game.dir/src/InputManager.cpp.o.d -o CMakeFiles/game.dir/src/InputManager.cpp.o -c /home/chris/game/src/InputManager.cpp
+
+CMakeFiles/game.dir/src/InputManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/InputManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chris/game/src/InputManager.cpp > CMakeFiles/game.dir/src/InputManager.cpp.i
+
+CMakeFiles/game.dir/src/InputManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/InputManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chris/game/src/InputManager.cpp -o CMakeFiles/game.dir/src/InputManager.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
-"CMakeFiles/game.dir/src/window.cpp.o"
+"CMakeFiles/game.dir/src/Main.cpp.o" \
+"CMakeFiles/game.dir/src/GameState.cpp.o" \
+"CMakeFiles/game.dir/src/InputManager.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
-game: CMakeFiles/game.dir/src/window.cpp.o
+game: CMakeFiles/game.dir/src/Main.cpp.o
+game: CMakeFiles/game.dir/src/GameState.cpp.o
+game: CMakeFiles/game.dir/src/InputManager.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 game: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 game: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chris/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
