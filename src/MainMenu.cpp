@@ -1,32 +1,31 @@
-#include "headers/MainMenu.h"
-#include <filesystem>
 #include <iostream>
+#include <cassert>
+#include "headers/MainMenu.h"
+#include "headers/UbuntuMonoRegular.h"
+#include "headers/UbuntuMonoBold.h"
 
 constexpr unsigned int fontSize = 24; // pixels
 const sf::Color fontColor = sf::Color::White ;
 constexpr float x = 100;
 constexpr float y = 100;
-constexpr const char* menuFontFile = "UbuntuMono-R.ttf";
-constexpr const char* highlightFontFile = "UbuntuMono-B.ttf";
 
 MainMenu::MainMenu(sf::RenderWindow& window) : window(window) {
-  std::filesystem::path execPath  = std::filesystem::current_path();
-  std::filesystem::path menuPath = execPath / ".." / "src" / "reqs" / "font" / menuFontFile;
-  std::filesystem::path highlightPath = execPath / ".." / "src" / "reqs" / "font" / highlightFontFile;
   
   sf::Font menuFont;
   sf::Font highlightFont;
+  std::cout << "variables declared" << std::endl;
 
-  if (!menuFont.loadFromFile(menuPath.string())) {
-    std::cerr << "Failed to load font" << menuFontFile << "\nCheck font directory game/src/reqs/font" << std::endl;
-  }
+  bool loadedMenuFont = this->menuFont.loadFromMemory(UbuntuMono_R_ttf, UbuntuMono_R_ttf_len);
+  assert(loadedMenuFont && "Failed to load menu font from memory. Check headers/UbuntuMonoRegular.h");
+  std::cout << "menu loaded" << std::endl;
 
-  if (!highlightFont.loadFromFile(highlightPath.string())) {
-    std::cerr << "Failed to load font" << highlightFontFile << "\nCheck font directory game/src/reqs/font" << std::endl;
-  }
+  bool loadedHighlightFont = this->highlightFont.loadFromMemory(UbuntuMono_B_ttf, UbuntuMono_B_ttf_len);
+  assert(loadedHighlightFont && "Failed to load highlight font from memory. Check headers/UbuntuMonoBold.h");
+  std::cout << "highlight loaded" << std::endl;
 
   newGame = menuObjectBuilder("New Game", highlightFont, fontSize, fontColor, x, y);
-  enterPassword = menuObjectBuilder("Enter Password", menuFont, fontSize, fontColor, (x * 2), (y * 2));
+  enterPassword = menuObjectBuilder("Enter Password", menuFont, fontSize, fontColor, x, (y * 2));
+  std::cout << "menuObject built" << std::endl;
 
 }
 
@@ -49,6 +48,8 @@ void MainMenu::update() {
 }
 
 void MainMenu::draw() {
+  std::cout << "Drawing newGame" << std::endl;
   window.draw(newGame);
+  std::cout << "Drawing enterPassword" << std::endl;
   window.draw(enterPassword);
 }

@@ -5,11 +5,12 @@
 #include "headers/InputManager.h"
 #include "headers/MainMenu.h"
 #include <memory>
+#include <iostream>
 
 int main() {
   sf::RenderWindow window(sf::VideoMode(800,600), "Game");
   MainMenu mainMenu(window);
-  std::unique_ptr<GameState> currState;
+  std::unique_ptr<GameState> currState = std::make_unique<MainMenuState>();
   
 
   while (window.isOpen()) {
@@ -21,9 +22,10 @@ int main() {
     }
 
     window.clear();
-    currState = std::make_unique<MainMenuState>();
-
+    
+    std::cout << "Working" << std::endl;
     mainMenu.draw();
+    std::cout << "Segfault" << std::endl;
     
   //TODO: Draw Graphics here
 
